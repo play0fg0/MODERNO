@@ -52,6 +52,7 @@ body {
 .title {
   text-align: center;
   color: #263238;
+  font-family: 'Roboto', sans-serif;
   font-weight: 700;
   font-size: 36px;
   line-height: 60px;
@@ -156,6 +157,7 @@ body {
   margin-bottom: 10px;
   font-size: 48px;
   line-height: 72px;
+  font-family: 'Roboto', sans-serif;
   font-weight: 700;
 }
 
@@ -163,6 +165,7 @@ body {
   margin-bottom: 50px;
   font-size: 20px;
   line-height: 30px;
+  font-family: 'Roboto', sans-serif;
   font-weight: 500;
 }
 
@@ -181,6 +184,7 @@ body {
   height: 56px;
   border: none;
   font-size: 14px;
+  font-family: 'Roboto', sans-serif;
   font-weight: 500;
   padding: 0px 60px 0px 25px;
 }
@@ -290,6 +294,7 @@ body {
       -ms-flex-align: center;
           align-items: center;
   min-height: 90px;
+  font-family: 'Roboto', sans-serif;
   font-weight: 500;
   border-bottom: 1px solid #e7ecf2;
 }
@@ -300,6 +305,7 @@ body {
 
 .product__item-title {
   color: #263238;
+  font-family: 'Roboto', sans-serif;
   font-weight: 500;
   font-size: 18px;
   display: block;
@@ -313,6 +319,7 @@ body {
 
 .product__item-price {
   font-size: 20px;
+  font-family: 'Roboto', sans-serif;
   font-weight: 700;
   color: #263238;
 }
@@ -354,6 +361,7 @@ body {
 
 .product__item-autor span {
   font-size: 14px;
+  font-family: 'Roboto', sans-serif;
   font-weight: 500;
 }
 
@@ -417,3 +425,89 @@ body {
 }
 
 /* ------------------end product-slider----------------- */
+/* ------------------start advantage-------------------- */
+.advantage {
+  background-color: #263238;
+  padding: 110px 0px;
+}
+
+.advantage__title {
+  color: #fff;
+  margin-bottom: 40px;
+}
+
+.advantage__inner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.advantage__item {
+  max-width: 370px;
+  text-align: center;
+  padding: 0px 15px;
+}
+
+.advantage__item:hover .advantage__item-image {
+  background-color: #8bc34a;
+}
+
+.advantage__item:hover .advantage__item-title {
+  color: #8bc34a;
+}
+
+.advantage__item:hover .advantage__item-image g {
+  fill: #fff;
+}
+
+.advantage__item-image {
+  width: 114px;
+  height: 114px;
+  background-color: #fff;
+  border-radius: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 0 auto 30px;
+  -webkit-transition: all .3s;
+  -o-transition: all .3s;
+  transition: all .3s;
+}
+
+.advantage__item-title {
+  margin-bottom: 25px;
+  font-size: 24px;
+  color: #fff;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 500;
+  -webkit-transition: all .3s;
+  -o-transition: all .3s;
+  transition: all .3s;
+}
+
+.advantage__item-text {
+  font-size: 15px;
+}
+
+.icosvg-1 svg {
+  width: 50px;
+}
+
+.icosvg-2 svg {
+  width: 70px;
+}
+
+.icosvg-3 svg {
+  width: 86px;
+}
+
+/* ------------------end advantage---------------------- */
