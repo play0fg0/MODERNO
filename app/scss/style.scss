@@ -127,21 +127,20 @@
     & + button {
         margin-left: 5px;
     }
-    & .mixitup-control-active{
+    & .mixitup-control-active {
         background-color: $red;
         color: #fff;
     }
-  /*   button:hover {
+    /*   button:hover {
         background-color: #e74c3c;
         color: #fff;
         transition: 0.3s;
     }  */
 }
-.product__inner-box{
+.product__inner-box {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between; 
-    
+    justify-content: space-between;
 }
 .product__item {
     max-width: 442px;
@@ -178,23 +177,23 @@
         font-size: 14px;
         color: $green;
     }
-    &-price{
+    &-price {
         font-size: 20px;
         @include f700;
         color: $bg;
     }
-    &-info{
+    &-info {
         display: flex;
         justify-content: space-between;
         align-items: center;
         min-height: 70px;
         padding: 10px 30px;
     }
-    &-autor{
+    &-autor {
         display: flex;
         align-items: center;
         max-width: 245px;
-        .avatar{
+        .avatar {
             width: 30px;
             height: 30px;
             border-radius: 50%;
@@ -204,21 +203,21 @@
             background-size: cover;
             margin-right: 14px;
         }
-        span{
+        span {
             font-size: 14px;
             @include f500;
         }
     }
-    &-star{
+    &-star {
         font-size: 12px;
-        span{
+        span {
             color: $bg;
         }
     }
 }
-.product__bottom-btn{
+.product__bottom-btn {
     text-align: center;
-    button{
+    button {
         margin: 45px 5px 0px;
         box-shadow: 0px 1px 3px 0px rgba(204, 216, 228, 0.75);
         border: none;
@@ -226,7 +225,7 @@
         color: $bg;
         padding: 20px 30px;
         cursor: pointer;
-        &.mixitup-control-active{
+        &.mixitup-control-active {
             background-color: $red;
             color: #fff;
         }
@@ -235,20 +234,20 @@
 /* ------------------end product------------------ */
 
 /* ------------------start product-slider--------------- */
-.product-slider{
+.product-slider {
     padding: 110px 0px 120px;
-    .slick-dots{
+    .slick-dots {
         text-align: center;
         margin-top: 50px;
-        li{
+        li {
             display: inline-block;
             margin: 0 3px;
-            &.slick-active{
-                button{
+            &.slick-active {
+                button {
                     background-color: $green;
                 }
             }
-            button{
+            button {
                 border-radius: 50%;
                 background-color: rgb(232, 232, 232);
                 border: none;
@@ -264,35 +263,35 @@
 
 /* ------------------end product-slider----------------- */
 /* ------------------start advantage-------------------- */
-.advantage{
+.advantage {
     background-color: $bg;
     padding: 110px 0px;
-    &__title{
+    &__title {
         color: #fff;
         margin-bottom: 40px;
     }
-    &__inner{
+    &__inner {
         display: flex;
         justify-content: space-between;
     }
-    &__item{
+    &__item {
         max-width: 370px;
         text-align: center;
         padding: 0px 15px;
-        &:hover{
-           .advantage__item-image{
-            background-color: $green;
-           }
-           .advantage__item-title{
-            color: $green;
-           } 
-           .advantage__item-image{
-               g{
-                   fill: #fff;
-               }
-           }
+        &:hover {
+            .advantage__item-image {
+                background-color: $green;
+            }
+            .advantage__item-title {
+                color: $green;
+            }
+            .advantage__item-image {
+                g {
+                    fill: #fff;
+                }
+            }
         }
-        &-image{
+        &-image {
             width: 114px;
             height: 114px;
             background-color: #fff;
@@ -300,38 +299,108 @@
             display: flex;
             justify-content: center;
             align-items: center;
-            margin: 0 auto 30px; 
-            transition: all .3s;
-        } 
-        &-title{
+            margin: 0 auto 30px;
+            transition: all 0.3s;
+        }
+        &-title {
             margin-bottom: 25px;
             font-size: 24px;
             color: #fff;
             @include f500;
-            transition: all .3s;
+            transition: all 0.3s;
         }
-        &-text{
+        &-text {
             font-size: 15px;
         }
-        
     }
 }
-.icosvg-1{
+.icosvg-1 {
     svg {
         width: 50px;
     }
 }
-.icosvg-2{
-    svg{
+.icosvg-2 {
+    svg {
         width: 70px;
     }
 }
-.icosvg-3{
-    svg{
+.icosvg-3 {
+    svg {
         width: 86px;
     }
 }
-
-
-
 /* ------------------end advantage---------------------- */
+
+/* ------------------start author------------------------ */
+
+.author {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 750px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    &__box {
+        max-width: 650px;
+        width: 100%;
+        min-height: 215px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: $green;
+    }
+    &__title {
+        font-size: 30px;
+        line-height: 30px;
+        color: #fff;
+        margin-right: 45px;
+        max-width: 265px;
+        span {
+            @include f700;
+        }
+    }
+    &__link {
+        font-size: 18px;
+        line-height: 36px;
+        padding: 14px 40px;
+        color: #263238;
+        background-color: #fff;
+    }
+}
+/* ------------------end author-------------------------- */
+/* ------------------start tutorial---------------------- */
+.tutorial {
+    padding: 60px 0px 120px;
+    &__title{
+        margin-bottom: 57px;
+    }
+    &__inner {
+        display: flex;
+        justify-content: space-between;
+    }
+    &__item {
+        max-width: 370px;
+        width: 100%;
+        &-image {
+            min-height: 270px;
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+        }
+        &-title {
+            font-size: 24px;
+            text-align: center;
+            color: #263238;
+            @include f700;
+            background-color: #F8F8F8;
+            padding: 30px 10px;
+        }
+      
+    }
+}
+/* ------------------end tutorial-------------------------*/
+/* ------------------start footer-------------------------*/
+
+
+/* ------------------end footer---------------------------*/

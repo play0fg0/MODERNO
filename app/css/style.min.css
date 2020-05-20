@@ -478,9 +478,9 @@ body {
       -ms-flex-align: center;
           align-items: center;
   margin: 0 auto 30px;
-  -webkit-transition: all .3s;
-  -o-transition: all .3s;
-  transition: all .3s;
+  -webkit-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  transition: all 0.3s;
 }
 
 .advantage__item-title {
@@ -489,9 +489,9 @@ body {
   color: #fff;
   font-family: 'Roboto', sans-serif;
   font-weight: 500;
-  -webkit-transition: all .3s;
-  -o-transition: all .3s;
-  transition: all .3s;
+  -webkit-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  transition: all 0.3s;
 }
 
 .advantage__item-text {
@@ -511,3 +511,101 @@ body {
 }
 
 /* ------------------end advantage---------------------- */
+/* ------------------start author------------------------ */
+.author {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 750px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.author__box {
+  max-width: 650px;
+  width: 100%;
+  min-height: 215px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-color: #8bc34a;
+}
+
+.author__title {
+  font-size: 30px;
+  line-height: 30px;
+  color: #fff;
+  margin-right: 45px;
+  max-width: 265px;
+}
+
+.author__title span {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 700;
+}
+
+.author__link {
+  font-size: 18px;
+  line-height: 36px;
+  padding: 14px 40px;
+  color: #263238;
+  background-color: #fff;
+}
+
+/* ------------------end author-------------------------- */
+/* ------------------start tutorial---------------------- */
+.tutorial {
+  padding: 60px 0px 120px;
+}
+
+.tutorial__title {
+  margin-bottom: 57px;
+}
+
+.tutorial__inner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.tutorial__item {
+  max-width: 370px;
+  width: 100%;
+}
+
+.tutorial__item-image {
+  min-height: 270px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.tutorial__item-title {
+  font-size: 24px;
+  text-align: center;
+  color: #263238;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 700;
+  background-color: #F8F8F8;
+  padding: 30px 10px;
+}
+
+/* ------------------end tutorial-------------------------*/
+/* ------------------start footer-------------------------*/
+/* ------------------end footer---------------------------*/
