@@ -57,6 +57,11 @@ body {
   line-height: 60px;
 }
 
+.rate-star {
+  display: inline-block;
+  margin-right: 13px;
+}
+
 @font-face {
   font-family: 'Roboto-Regular', sans-serif;
   src: url("../fonts/Roboto-Regular.woff2") format("woff2"), url("../fonts/Roboto-Regular.woff") format("woff");
@@ -333,6 +338,7 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  max-width: 245px;
 }
 
 .product__item-autor .avatar {
@@ -349,6 +355,14 @@ body {
 .product__item-autor span {
   font-size: 14px;
   font-weight: 500;
+}
+
+.product__item-star {
+  font-size: 12px;
+}
+
+.product__item-star span {
+  color: #263238;
 }
 
 .product__bottom-btn {
@@ -372,3 +386,34 @@ body {
 }
 
 /* ------------------end product------------------ */
+/* ------------------start product-slider--------------- */
+.product-slider {
+  padding: 110px 0px 120px;
+}
+
+.product-slider .slick-dots {
+  text-align: center;
+  margin-top: 50px;
+}
+
+.product-slider .slick-dots li {
+  display: inline-block;
+  margin: 0 3px;
+}
+
+.product-slider .slick-dots li.slick-active button {
+  background-color: #8bc34a;
+}
+
+.product-slider .slick-dots li button {
+  border-radius: 50%;
+  background-color: #e8e8e8;
+  border: none;
+  font-size: 0;
+  width: 16px;
+  height: 16px;
+  cursor: pointer;
+  outline: none;
+}
+
+/* ------------------end product-slider----------------- */
