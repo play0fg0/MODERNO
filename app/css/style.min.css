@@ -679,6 +679,7 @@ body {
   -webkit-transition: all 0.3s;
   -o-transition: all 0.3s;
   transition: all 0.3s;
+  z-index: 1;
 }
 
 .user__box,
@@ -833,6 +834,11 @@ body {
 
 .icons-color::before {
   color: #ef6c00;
+}
+
+.header__btn-menu,
+.header__menu {
+  display: none;
 }
 
 /* ------------------end header------------------ */
@@ -1947,3 +1953,96 @@ button.icon-unsorted {
 }
 
 /* ------------------end product-page---------------------*/
+@media (max-width: 1150px) {
+  .footer__inner {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .footer__col-adress {
+    margin-bottom: 30px;
+    min-width: 100%;
+  }
+  .header__text {
+    display: none;
+  }
+}
+
+@media (max-width: 900px) {
+  .footer__col-social {
+    min-width: 100%;
+    margin-top: 30px;
+  }
+  .footer__inner {
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+  }
+  .footer__col-menu + .footer__col-menu {
+    margin-left: 40px;
+  }
+}
+
+@media (max-width: 840px) {
+  .menu__list {
+    display: none;
+  }
+  .menu__btn {
+    display: block;
+    width: 30px;
+    cursor: pointer;
+  }
+  .menu__btn div {
+    background-color: #fff;
+    height: 3px;
+  }
+  .menu__btn div + div {
+    margin-top: 5px;
+  }
+}
+
+@media (max-width: 640px) {
+  .notification__box,
+  .message__box {
+    display: none;
+  }
+}
+
+@media (max-width: 540px) {
+  .footer__col {
+    min-width: 100%;
+  }
+  .footer__col-menu + .footer__col-menu {
+    margin-left: 40px;
+    margin-top: 30px;
+  }
+}
+
+@media (max-width: 520px) {
+  .header__btn-menu {
+    display: block;
+  }
+  .header__btn-menu {
+    width: 90px;
+    height: 90px;
+    background-color: #263238;
+    position: relative;
+    right: 0;
+    top: 0;
+  }
+  .header__btn-menu::before {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+    font-size: 50px;
+    color: #fff;
+  }
+}
+
+@media (min-width: 841px) {
+  .menu__list {
+    display: block !important;
+  }
+}

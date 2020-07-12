@@ -176,6 +176,7 @@
     height: 0;
     overflow: hidden;
     transition: all 0.3s;
+    z-index: 1;
 }
 .user__box,
 .basket__box,
@@ -297,7 +298,10 @@
 .icons-color::before{
     color: $tomato;
 }
-
+.header__btn-menu,
+.header__menu{
+    display: none;
+}
 
 /* ------------------end header------------------ */
 /* ------------------start search------------------ */
@@ -1147,3 +1151,7 @@ button.icon-unsorted {
 }
 
 /* ------------------end product-page---------------------*/
+
+
+
+@import 'media';
